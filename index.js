@@ -47,7 +47,7 @@ function getMovieFromApi(moviesArr) {
                         <div class="movie-details-section">
                             <div class="movie-title-container">
                                 <h3 class="movie-title">${data.Title}</h3>
-                                <img src="img/rating star.png" alt="rating-star" class="star">
+                                <i class="fa-solid fa-star"></i>
                                 <p class="movie-rating">${data.imdbRating}</p>
                             </div>
                             <div class="genre-watchlist-container">

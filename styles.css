@@ -53,9 +53,16 @@ header {
 span {
     position: absolute;
     left: 30px;
-    top: 0;
+    top: 15px;
     bottom: 0;
-    
+}
+
+.fas {
+    color: #FFFFFF;
+}
+
+.fa-star {
+    color: gold;
 }
 
 form {
@@ -218,6 +225,7 @@ a {
 a:hover, .btn:hover {
     color: #98f5e1;
 }
+
 
 
 @media (min-width: 786px) {
