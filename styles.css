@@ -62,7 +62,7 @@ span {
 }
 
 .fa-star {
-    color: gold;
+    color: goldenrod;
 }
 
 form {
@@ -92,8 +92,8 @@ input[type="text"] {
     text-transform: capitalize;
 }
 
-input[type="text"]:focus, .btn:focus {
-    border-right: 3px solid #98f5e1;
+input[type="text"]:focus{
+    border-right: 1px solid goldenrod;
 }
 
 .btn{
@@ -106,6 +106,8 @@ input[type="text"]:focus, .btn:focus {
 }
 .btn:focus {
     color: #98f5e1;
+    border-bottom: 1px solid goldenrod;
+    border-right: 2.0px solid goldenrod;
 }
 
 /*container firstChild background logo 'start exploring'  */
