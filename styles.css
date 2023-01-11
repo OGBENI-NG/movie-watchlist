@@ -1,0 +1,290 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #121212;
+    
+}
+
+
+button, span, .watchlist-con {
+    cursor: pointer;
+}
+
+header,
+form,
+span, 
+.movie-container, 
+.movie-title-container,
+.movie-genre-container,
+.genre-watchlist-container,
+.watchlist-con,
+.count-con {
+    display: flex;
+}
+
+
+
+header {
+    position: relative;
+    height: 30vh;
+    align-items: center;
+    padding: 0 1em;
+    background-image: url('img/logo1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: #0e0e0eee;
+    justify-content: space-between;
+    background-blend-mode: soft-light;
+    gap: 10px;
+}
+
+.logo {
+    width: 16px;
+    height:16px;
+    margin: auto;
+   
+}
+
+span {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    
+}
+
+form {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 0 1em;
+    margin-top: -1.56em;
+    height: max-content;
+
+}
+
+input[type="text"] {
+    font-size: 1.25rem;
+    padding: .5em;
+    padding-left: 2em;
+    width: 70%;
+    border: 1px solid #2E2E2F;
+    outline: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: #2E2E2F;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    text-transform: capitalize;
+}
+
+input[type="text"]:focus, .btn:focus {
+    border-right: 3px solid #98f5e1;
+}
+
+.btn{
+    width: 30%;
+    padding: 0 1em;
+    background: #4B4B4B;;
+    border: 1px solid #2E2E2F;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.btn:focus {
+    color: #98f5e1;
+}
+
+/*container firstChild background logo 'start exploring'  */
+.background-logo {
+   width: 150px;
+   margin: 10em auto;
+}
+
+
+.movie-poster {
+    width: 100px;
+    height: 170px;
+}
+
+.movie-container {
+    gap: 1em;
+    border-bottom: 1.5px solid #4B4B4B;
+    margin-top: 2em;
+    padding: 0 1em 1em;
+    align-items: center;
+}
+
+.movie-container:first-child {
+    padding-top: 2em;
+}
+
+
+.movie-title-container {
+    align-items: center;
+    gap: .5em;
+    margin-bottom: -1em;
+}
+
+.genre-watchlist-container {
+    align-items: center;
+    gap: 1em;
+    margin-bottom: -1em;
+}
+
+.movie-genre-container {
+    align-items: center;
+    gap: .5em;
+}
+
+.watchlist-con {
+    align-items: center;
+}
+
+/* add and remove btn */
+.add:active, .add:focus {
+    color: #98f5e1;
+}
+
+.watchlist {
+    color: #4B4B4B;
+    background: transparent;
+    border: none;
+}
+.watchlist:active {
+    color: #6a040f;
+}
+
+.movie-plot {
+    color: #A5A5A5;
+    font-size: .875rem;
+}
+
+.hidden {
+    display: none;
+
+}
+
+/* typograpy */
+
+.movie-title {
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.movie-genre-container p, .watchlist {
+    font-size: .75rem;
+}
+
+.noMovieTxt, .watchlist-logo {
+    margin-top: 3em;
+    width: 100%;
+    color: #4B4B4B;
+    text-align: center;
+}
+
+.watchlist-logo {
+    margin-top: 12em;
+}
+
+a, 
+.firm, 
+button, 
+input, 
+.movie-title, 
+.movie-rating, 
+.movie-genre-container, 
+.watchlist {
+    color: #FFFFFF;
+}
+
+.firm {
+    font-size: 1.5rem;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: .85rem;
+}
+
+a:hover, .btn:hover {
+    color: #98f5e1;
+}
+
+
+@media (min-width: 786px) {
+    .decstop-view, form {
+        width: 100%;
+        max-width: 550px;
+        margin: 0 auto;
+    }
+
+    body {
+        background: #2E2E2F;
+    }
+
+    .movie-container:first-child {
+        padding-top: 1em;
+        
+    }
+
+    .movie-container {
+        padding: 0 0  1em;
+        background-color: #121212;
+        
+    }
+
+    header, form, .container{
+        padding: 0 2em;
+    }
+
+    .container  {
+       background-color: #121212;
+       padding: 2em ;
+    
+    }
+
+    form {
+        margin-top: -1.56em;
+    }
+
+    span {
+        left: 46px;
+    }
+
+    .movie-poster {
+        height: 147.2px
+    }
+
+    .logo-img {
+        display: block;
+        width: 148px;
+        height: 90px;
+        margin: 0 auto;
+    }
+
+
+    .background-logo {
+        font-size: 1.125rem;
+        font-weight: 700;
+        background: #121212;
+        width: 350px;
+    }
+
+    .firm {
+        font-size: 2rem;
+    }
+
+    a {
+        font-size: 1.15rem;
+    }
+
+}
